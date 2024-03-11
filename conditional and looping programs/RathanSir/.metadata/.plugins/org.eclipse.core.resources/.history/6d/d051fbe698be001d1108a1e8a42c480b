@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html"%>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Insert title here</title>
+</head>
+<body>
+<%!
+String username;
+String password;
+%>
+<% 
+
+username=request.getParameter("username");
+password=request.getParameter("password");
+
+if(username.equals("bhavani")&&password.equals("bhavani@123"))
+	out.println("gujjari bhavnai prasad is king of the battle........");
+else
+	out.println("gujjari bhavnai prasad is king of the battle........haaaaaaaaaaaa");
+
+
+%>
+</body>
+</html>

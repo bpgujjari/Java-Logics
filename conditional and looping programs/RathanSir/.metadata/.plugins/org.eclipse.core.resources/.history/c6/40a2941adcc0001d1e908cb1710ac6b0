@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body bgcolor="pink" style="text-align: center;">
+<h1>Welcome to Project-K</h1>
+<h1>Congratulations.......Your registration successful!</h1>
+<h2><a href="login.html">Click here to login</a></h2>
+
+</body>
+</html>

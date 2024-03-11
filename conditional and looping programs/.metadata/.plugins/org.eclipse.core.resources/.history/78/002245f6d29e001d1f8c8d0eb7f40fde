@@ -1,0 +1,6 @@
+package com.sathya.app2;
+
+public class Test{
+	public static String fname="India";
+	public static String lname="Bharath";
+}

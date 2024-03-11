@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor="pink" style="text-align: center;"> 
+<form method="post" action="qualact">
+
+<input type="number" name="cid" placeholder="enter course id"><br><br>
+<input type="text" name="cname" placeholder="enter course name"><br><br>
+<input type="text" name="branch" placeholder="enter your branch"><br><br>
+<input type="submit" value="submit">
+</form>
+</body>
+</html>

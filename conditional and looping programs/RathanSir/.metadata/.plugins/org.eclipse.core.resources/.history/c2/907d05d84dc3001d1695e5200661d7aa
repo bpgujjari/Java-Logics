@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor="aqua" style="text-align: center;">
+<input type="text" name="username" placeholder="enter your name"><br><br>
+<input type="number" name="number" placeholder="enter your number"><br><br>
+<input type="email" name="email" placeholder="enter your email"><br><br>
+<input type="submit" value="Delete">
+</body>
+</html>

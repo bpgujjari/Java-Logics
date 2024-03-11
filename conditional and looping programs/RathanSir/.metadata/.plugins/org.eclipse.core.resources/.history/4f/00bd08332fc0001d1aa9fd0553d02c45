@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor="pink" style="text-align: center;"> 
+<form method="post" action="collegeact.jsp">
+<input type="number" name="clgid" placeholder="enter clg id"><br><br>
+<input type="text" name="clgname" placeholder="enter clg name"><br><br>
+<input type="text" name="clgloc" placeholder="enter clg location"><br><br>
+<input type="submit" value="submit">
+</form>
+</body>
+</html>

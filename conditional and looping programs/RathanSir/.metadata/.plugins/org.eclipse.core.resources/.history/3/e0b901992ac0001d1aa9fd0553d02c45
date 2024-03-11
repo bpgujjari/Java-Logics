@@ -1,0 +1,14 @@
+<%@ page language="java" contentType="text/html"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql" %>
+<html>
+<body>
+<sql:setDataSource 
+driver="oracle.jdbc.driver.OracleDriver"
+url="jdbc:oracle:thin:@localhost:1521:xe"
+user="gujjari"
+password="bhavani">
+</sql:setDataSource>
+<sql:update var="result" sql="insert into emp values(200,'kingking',898.09)" />
+data inserted successfully......${result}
+</body>
+</html>

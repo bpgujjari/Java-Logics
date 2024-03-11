@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor="aqua" style="text-align: center;">
+<form  method="post" action="DeleteServlet"></form>
+<h2>Enter your primary details to delete ur account..</h2>
+<input type="text" name="username" placeholder="enter your name"><br><br>
+<input type="number" name="number" placeholder="enter your number"><br><br>
+<input type="submit" value="Delete">
+</form>
+</body>
+</html>

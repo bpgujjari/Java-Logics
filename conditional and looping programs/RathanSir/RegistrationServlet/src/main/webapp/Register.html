@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration</title>
+</head>
+<body bgcolor="pink" style="text-align: center;">
+<h1>Registration form</h1>
+<fieldset style="text-align: center;">
+<table>
+<form method="post" action="Register" style="text-align: center;" >
+<tr>
+<td>UserName</td>
+<td> <input type="text" name="username"> </td>
+</tr>
+<tr>
+<td>password</td>
+<td> <input type="password" name="password"> </td>
+</tr>
+<td>Gender</td>
+<td> <input type="radio" name="gender" value="male">Male </td>
+<td> <input type="radio" name="gender" value="female">Female</td>
+</tr>
+<tr>
+<td>Qualifications</td>
+<td> <input type="checkbox" name="qual" value="BSC">Bsc</td>
+<td> <input type="checkbox" name="qual" value="MCA">MCA</td>
+</tr>
+<tr>
+<td></td>
+<td> <input type="checkbox" name="qual" value="Btech">Btech</td>
+<td> <input type="checkbox" name="qual" value="Mtech">Mtech</td>
+</tr>
+<tr>
+<td>User type</td>
+<td> <select>
+<option value="select"> select
+<option value="fresher" name="usertype">Fresher
+<option value="exp" name="usertype">Exp
+</select> </td>
+</tr>
+<tr>
+<td>Technologies</td>
+<td> <input type="checkbox" name="tech" value="corejava">corejava</td>
+<td> <input type="checkbox" name="tech" value="advancejava">advance java</td>
+</tr>
+<tr>
+<td></td>
+<td> <input type="checkbox" name="tech" value="Spring">Spring</td>
+<td> <input type="checkbox" name="tech" value="Springboot">Springboot</td>
+</tr>
+
+<tr>
+<td>Address</td>
+<td> <input type="text" name="address" placeholder="Housenum"></td>
+</tr>
+<tr>
+<td></td>
+<td> <input type="text" name="address" placeholder="Village" ></td>
+</tr>
+<tr>
+<td></td>
+<td> <input type="text" name="address" placeholder="Distic" ></td>
+</tr>
+<tr>
+<td>Comments</td>
+<td>
+<textarea rows="4" cols="10" name="comments"></textarea>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<input type="submit" value="Register">
+</td>
+</tr>
+</form>
+</table>
+</fieldset>
+</body>
+</html>

@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+C:\Users\Rudra\OneDrive\Desktop\programs\Logics\.metadata\.plugins\org.eclipse.jdt.core
+1687773848.index
+1865797976.index
+3769070874.index
+933385855.index
+1165486380.index

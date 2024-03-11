@@ -1,0 +1,57 @@
+package com.logics;
+
+import java.util.Scanner;
+
+class NoCharacterException extends RuntimeException{
+	
+}
+
+public class Test1 {
+	
+	
+	public static String newString1(char[]arr,char ch)
+	{String newString="";
+		for (int i = 0; i < arr.length; i++) {
+			
+			if(ch!=arr[i])
+			{newString=newString+arr[i];}
+			else {
+				throw new NoCharacterException();
+			}
+		}
+		
+		return newString;
+	}
+	
+	
+	public static void exception(char[]arr,char ch)
+	{
+		for (int i = 0; i < arr.length; i++) {
+			
+			if(ch!=arr[i]) {
+				throw new NoCharacterException();
+			}
+			
+		}
+	}
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("enter your character...");
+		
+		char ch=sc.next().charAt(0);
+		System.out.println(ch);
+		
+		String s="abcdefghijk";
+		
+		 char []arr=s.toCharArray();
+		 
+		 
+		 String s1= Test1.newString1(arr, ch);
+		 System.out.println(s1);
+		 
+		 
+		 
+}
+}

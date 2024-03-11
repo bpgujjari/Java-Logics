@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>project-k</title>
+</head>
+<body bgcolor="pink" style="text-align: center;">
+<button><a href="regstration.html">Register</a></button>
+<button><a href="login.html">Login</a></button>
+</body>
+</html>

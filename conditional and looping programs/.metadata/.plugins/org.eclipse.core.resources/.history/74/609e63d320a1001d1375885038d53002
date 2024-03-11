@@ -1,0 +1,9 @@
+//NumberFormatException
+class Test{
+	public static void main(String[] args) {
+	    //--String s=10; Valid
+		String s="ten";//NumberFormatException
+	    int num=Integer.parseInt(s);
+	    System.out.println(num);
+		}
+}

@@ -1,0 +1,20 @@
+package com.logics;
+
+import java.util.Scanner;
+
+public class ConvertDaysToYearsANdWeaks {
+public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter cost-->");
+	double cost=sc.nextInt();
+	System.out.println("enter quantity-->");
+	int quant=sc.nextInt();
+	
+	
+	
+	System.out.println("enter -->");
+
+	
+	
+}
+}

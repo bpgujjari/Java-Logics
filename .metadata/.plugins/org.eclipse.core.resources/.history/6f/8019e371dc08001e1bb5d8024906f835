@@ -1,0 +1,16 @@
+package com.logics;
+
+public class patternABC {
+public static void main(String[] args) {
+
+	
+	for(int i=65; i<=69;i++){
+		for(int j=65; j<=69;j++)
+		{
+			char ch=(char)j;
+			System.out.println(ch);
+		}
+		System.out.println();
+	}
+}
+}

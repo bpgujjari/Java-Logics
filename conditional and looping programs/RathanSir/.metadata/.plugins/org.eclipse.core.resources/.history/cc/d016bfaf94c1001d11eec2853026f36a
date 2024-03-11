@@ -1,0 +1,51 @@
+package com.sathya.project;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.SQLException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class RegServlet
+ */
+@WebServlet("/RegServlet")
+public class RegServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+    public RegServlet() {
+    }
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.setContentType("text/html");
+		PrintWriter writer=response.getWriter();
+		int id= Integer.parseInt(request.getParameter("id"));
+		String name= request.getParameter("name");
+		String password= request.getParameter("password");
+		String email = request.getParameter("email");
+		String mobile=request.getParameter("mobile");
+		String sal=request.getParameter("sal");
+
+		try {
+			int res1=DAO.submit(id, name, password, email, mobile, sal);
+			
+			if(res1==1)
+			{
+				RequestDispatcher dp=request.getRequestDispatcher("success.html");
+				dp.forward(request, response);
+			}
+				else
+				{RequestDispatcher dp=request.getRequestDispatcher("failure.html");
+				dp.forward(request, response);	
+				}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

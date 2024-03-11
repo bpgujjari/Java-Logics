@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class RathanSir {
+
+	public static void main(String[] args) {
+		while(true)
+		{
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter any thing");
+		String any=sc.next();
+		System.out.println("Rathan Sir is Hero");
+		}
+	}
+}

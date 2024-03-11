@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Test{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number");
+		int n=sc.nextInt();
+		for(int i=1;i<=n;i++) {
+			int[] arr=new int [100];
+			int j=0;
+			int m=i;
+			while(m>0)
+			{
+				int rem=m%2;	
+				arr[j]=rem;
+				m=m/2;
+				j++;
+			}
+			for(int k=j-1;k>=0;k--)
+				System.out.print(+arr[k]);
+				System.out.println("  ");
+		}
+	}
+}
+

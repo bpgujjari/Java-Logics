@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>WElcome to jsp1</h1>
+<form action="JSPExample.jsp">
+<input type="text" name="username"> <br><br>
+<input type="password" name="password"><br><br>
+<input type="submit" value="Login">
+</form>
+</body>
+</html>

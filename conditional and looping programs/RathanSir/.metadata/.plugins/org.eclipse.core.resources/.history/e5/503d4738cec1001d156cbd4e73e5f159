@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Welcome to Projectk-K...</h1>
+<h2>create account</h2>
+
+<h1>userlayer</h1>
+<select>
+<option>user layer</option>user layer
+opt
+</select>
+<a href="Home.html"><input type="submit" value="register"></a>
+<h2>login into account</h2>
+<a href="login.html"><input type="submit" value="login"></a>
+</body>
+</html>

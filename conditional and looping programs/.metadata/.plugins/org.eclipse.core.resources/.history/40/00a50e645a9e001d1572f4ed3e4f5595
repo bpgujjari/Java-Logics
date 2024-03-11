@@ -1,0 +1,9 @@
+package com.sathya.protectd;
+
+public class A{
+	protected int num=100;
+	public static void main(String[] args) {
+		A a =new A();
+	System.out.println(a.num);
+}
+}

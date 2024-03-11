@@ -1,0 +1,12 @@
+package com.logics;
+
+import java.util.Scanner;
+
+public class ConvertDaysToYearsANdWeaks {
+public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter days-->");
+	int days=sc.nextInt();
+	System.out.println(days);
+}
+}

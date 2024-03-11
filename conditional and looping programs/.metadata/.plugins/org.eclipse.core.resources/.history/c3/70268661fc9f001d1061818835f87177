@@ -1,0 +1,17 @@
+package com.test;
+
+public class Test {
+	/*//public static int num=100;
+	//public int num1=200;
+	//public static void main(String[] args) {
+		//System.out.println(num);
+		//System.out.println(num1);
+	static String name="Rathan sir";
+	public static void info() {
+		System.out.println(name);
+	}*/
+	//public static string name="Bhavaniprasad";
+	public static String con="India";
+	public String st="Telangana";
+}
+	

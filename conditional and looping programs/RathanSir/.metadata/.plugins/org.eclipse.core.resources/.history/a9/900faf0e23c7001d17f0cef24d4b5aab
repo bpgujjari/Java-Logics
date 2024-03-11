@@ -1,0 +1,28 @@
+<%@page import="java.sql.PreparedStatement"%>
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.Connection"%>
+<%@ page language="java" contentType="text/html"%>
+<!DOCTYPE html>
+<html>
+<body>
+<%
+int eid = Integer.parseInt(request.getParameter("eid"));
+String ename= request.getParameter("ename");
+double esal= Double.parseDouble(request.getParameter("esal"));
+
+try
+{
+	
+Class.forName("oracle.jdbc.driver.OracleDriver");
+Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","gujjari","bhavani");
+PreparedStatement ps=con.prepareStatement("insert into employee values(?,?,?,?,?,?,?,?)");
+
+}
+catch(Exception e)
+{
+out.print(e.getMessage());	
+}
+
+%>
+</body>
+</html>

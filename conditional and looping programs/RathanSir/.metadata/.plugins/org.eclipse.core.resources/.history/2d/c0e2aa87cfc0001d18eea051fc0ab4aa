@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body bgcolor="pink" style="text-align: center;" >
+<form method="post" action="RegServlet" >
+<input type="text" name="name" placeholder="enter your name..">
+<input type="password" name="password" placeholder="enter your password">
+<input type="number" name="number" placeholder="Enter your mobile no:">
+<input type="email" name="email" placeholder="entet your mailId">
+<input type="submit" value="Register">
+</form>
+</body>
+</html>

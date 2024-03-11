@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body bgcolor="aqua">
+<fieldset>
+<h1 style="text-align: center;">Registration form</h1>
+<form method="post" action="RegServlet" style="text-align: center;">
+<input type="number" name="id" placeholder="enter your id"><br><br>
+<input type="text" name="name" placeholder="enter your name"><br><br>
+<input type="password" name="password" placeholder="enter your password"><br><br>
+<input type="email" name="email" placeholder="enter your mailID"><br><br>
+<input type="number" name="mobile" placeholder="enter your mobile no">  <br><br>
+<input type="number" name="sal" placeholder="enter your salary"> <br><br>
+<input type="submit" value="register">
+<a href="loginServlet">
+<input type="submit" value="login"></a>
+</form>
+</fieldset>
+</body>
+</html>

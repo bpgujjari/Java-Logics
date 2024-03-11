@@ -1,0 +1,16 @@
+package com.logics;
+
+import java.util.Scanner;
+
+public class DaysToYearsANdWeaks {
+public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter days-->");
+	int days=sc.nextInt();
+	
+	int years=days/365;
+	int months=(days%365)/30;
+	int weeks=((days%365)/30)%7;
+	System.out.println(years+" "+months+" "+weeks);
+}
+}

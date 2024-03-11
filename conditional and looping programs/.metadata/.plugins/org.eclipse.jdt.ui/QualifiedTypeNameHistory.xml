@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.management.OperatingSystemMXBean"/>
+    <fullyQualifiedTypeName name="com.sathya.operations.Operations"/>
+    <fullyQualifiedTypeName name="com.sathya.Faculty.Faculty"/>
+    <fullyQualifiedTypeName name="com.sathya.Institute.Institute"/>
+    <fullyQualifiedTypeName name="com.sathya.app1.Test"/>
+    <fullyQualifiedTypeName name="com.sathya.app2.Test"/>
+    <fullyQualifiedTypeName name="com.test.Test"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="java.lang.IncompatibleClassChangeError"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,14 @@
+package com.sathya.prot;
+
+public class A {
+	protected int num=100;
+	public static void main(String[] args) {
+	//System.out.println(.num);
+}
+}
+class B extends A{
+	public static void main(String[] args) {
+	B b=new B();
+	System.out.println(b.num);
+}
+}

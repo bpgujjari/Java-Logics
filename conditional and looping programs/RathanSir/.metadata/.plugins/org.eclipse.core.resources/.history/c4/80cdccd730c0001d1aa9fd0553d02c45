@@ -1,0 +1,10 @@
+<%@page import="java.util.Enumeration"%>
+<%@ page language="java" contentType="text/html"%>
+<html>
+<body>
+<%
+Enumeration <String> names= session.getAttributeNames();
+%>
+${names}<br>
+</body>
+</html>

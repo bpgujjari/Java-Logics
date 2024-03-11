@@ -1,0 +1,47 @@
+<%@page import="com.sathya.jstl.Student"%>
+<%@page import="java.util.List"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<%
+Student student;
+Student s1=new Student(11,"Rathan","Ameerpet",5.6);
+Student s2=new Student(22,"Chimtu","SRNagar",5.6);
+Student s3=new Student(33,"DonChimtu","Gurudwar ka don",5.5);
+List<Student> students=List.of(s1,s2,s3);
+request.setAttribute("students", students);
+List <String> names=List.of("Gujjari","bhavnai","prasad");
+String name1="GangaPrasad";
+request.setAttribute("name1", name1);
+request.setAttribute("names",names);
+for(String name:names)
+{
+	out.println(name);	
+}
+%><br>
+<c:out value="${name1}"></c:out><br>
+<c:forEach var="names" items="${names}">
+your name......${names}<br>
+</c:forEach>
+
+
+<c:forEach var="num" begin="1" end="10">
+${num }<br> 
+</c:forEach>
+<br><br><br><br>
+<c:forEach var=guja items=${students}>
+student id....${guja.id}
+student name...${guja.name}
+student address....${guja.addr}
+student height...${guja.height}
+<br>
+</c:forEach>
+</body>
+</html>

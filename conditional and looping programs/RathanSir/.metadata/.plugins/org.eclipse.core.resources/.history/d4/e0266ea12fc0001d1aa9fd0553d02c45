@@ -1,0 +1,16 @@
+<%@ page language="java" contentType="text/html"%>
+<html>
+<body>
+<% 
+String clgid= request.getParameter("clgid");
+String clgname= request.getParameter("clgname");
+String clgloc= request.getParameter("clgloc");
+
+session.setAttribute("clgid", clgid);
+session.setAttribute("clgname", clgname);
+session.setAttribute("clgloc", clgloc);
+%>
+<jsp:forward page="qual.html">
+</jsp:forward>
+</body>
+</html>

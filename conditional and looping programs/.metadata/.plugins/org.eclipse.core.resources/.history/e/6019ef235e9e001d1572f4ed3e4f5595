@@ -1,0 +1,8 @@
+package com.sathya.Client;
+
+import static com.sathya.app1.Test.*;
+
+public class TestClient1 {
+	System.out.println("Your name"+firstname+lastname)
+
+}

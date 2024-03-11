@@ -1,0 +1,53 @@
+package com.sathya.project;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class DAO {
+	static Connection connection= TestConn.conn();
+public static int submit(int id,String name,String password,String email,long mobile,long sal) throws SQLException
+{
+	PreparedStatement p=connection.prepareStatement("insert into projectc values(?,?,?,?,?,?)");
+	
+	p.setInt(1, id);
+	p.setString(2, name);
+	p.setString(3, password);
+	p.setString(4, email);
+	p.setLong(5, mobile);
+	p.setLong(6, sal);
+	int res=p.executeUpdate();
+	
+	if(res==1)
+		return res;
+	else
+		return 0;
+}
+public static int deleteUser(String name,long mobile)
+{
+	Statement statement=connection.createStatement();
+	statement.executeUpdate("delete from projectc where username='"+name+"' and moblie="+mobile);
+	
+	
+	return ;
+	
+
+}
+
+
+
+
+public static boolean loginCheck(String name, String password) throws SQLException {
+	Statement statement=connection.createStatement();
+	ResultSet set=statement.executeQuery("select * from projectc");
+	while (set.next()) {
+		String uname = set.getString(2);
+		String pword = set.getString(3);
+		
+		if (uname.equals(name) && pword.equals(password)) {
+				return true;
+			}
+	}
+	return false;}}

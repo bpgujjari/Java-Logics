@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body style="text-align: center;">
+<form method="post" action="DBCon">
+<h1>register</h1>
+<input type="number" name="id" placeholder="enter id"><br><br>
+<input type="text" name="name" placeholder="enter name"><br><br>
+<input type="number" name="marks" placeholder="enter marks"><br><br>
+<input type="submit" value="register"> 
+</form>
+</body>
+</html>

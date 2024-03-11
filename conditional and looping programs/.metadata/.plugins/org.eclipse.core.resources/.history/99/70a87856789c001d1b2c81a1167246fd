@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class RathanSir {
+
+	public static void main(String[] args) {
+		while(true)
+		{
+		int number=10;
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter any thing");
+		String any=sc.next();
+		if(number==10)
+		System.out.println("Rathan Sir is Hero");
+		else
+			System.out.println("Rathan Sir is Hero");
+		}
+	}
+}

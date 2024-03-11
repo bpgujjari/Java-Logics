@@ -1,0 +1,9 @@
+package com.sathya.yakoobSir;
+
+public class Connection {
+
+public static TestConn conn() {
+	
+}
+	
+}

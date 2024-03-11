@@ -1,0 +1,60 @@
+<%@ page language="java" contentType="text/html"  import="java.sql.*"%>
+<!DOCTYPE html>
+<html>
+<body>
+<%
+int eid = Integer.parseInt(request.getParameter("eid"));
+String ename= request.getParameter("ename");
+double esal= Double.parseDouble(request.getParameter("esal"));
+double ta=0.0,da=0.0,pf=0.0,gross_sal=0.0,net_sal=0.0;
+
+if(esal<30000)
+{
+ta=(esal*9)/100;
+da=(esal*11)/100;
+pf=(esal*12.75)/100;
+gross_sal=esal+ta+da;
+net_sal=gross_sal-pf;
+}
+if(esal>=30000&&esal<=60000)
+{
+ta=(esal*11)/100;
+da=(esal*17)/100;
+pf=(esal*19.25)/100;
+gross_sal=esal+ta+da;
+net_sal=gross_sal-pf;
+}
+else
+	{
+	ta=(esal*13)/100;
+	da=(esal*19)/100;
+	pf=(esal*23.25)/100;
+	gross_sal=esal+ta+da;
+	net_sal=gross_sal-pf;
+	}
+	
+try
+{
+	
+Class.forName("oracle.jdbc.driver.OracleDriver");
+Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","gujjari","bhavani");
+PreparedStatement ps=con.prepareStatement("insert into employee values(?,?,?,?,?,?,?,?)");
+ps.setInt(1, eid);
+ps.setString(2, ename);
+ps.setDouble(3, esal);
+ps.setDouble(4, ta);
+ps.setDouble(5, da);
+ps.setDouble(6, pf);
+ps.setDouble(7, gross_sal);
+ps.setDouble(8, net_sal);
+int i = ps.executeUpdate();
+out.print(i+"--Data inserted successfully.....");
+}
+catch(Exception e)
+{
+out.print(e.getMessage());	
+}
+
+%>
+</body>
+</html>

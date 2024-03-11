@@ -1,0 +1,27 @@
+package com.sathya.project;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+public class DAO {
+	
+public static int submit(int id,String name,String password,String email,long mobile,long sal) throws SQLException
+{
+	Connection connection= TestConn.conn();
+	PreparedStatement p=connection.prepareStatement("insert into projectc values(?,?,?,?,?,?)");
+	
+	p.setInt(1, id);
+	p.setString(2, name);
+	p.setString(3, email);
+	p.setString(4, password);
+	p.setString(5, mobile);
+	p.setString(6, sal);
+	int res=p.executeUpdate();
+	
+	if(res==1)
+		return res;
+	else
+		return 0;
+}
+}

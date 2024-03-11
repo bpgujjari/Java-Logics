@@ -1,0 +1,16 @@
+package com.sathya.protectd;
+
+public class A {
+	protected int num=100;
+
+}
+class B extends A{
+	System.out.println(num);
+}	
+class C{
+	public static void main(String[] args) {
+		
+	
+	System.out.println(num);
+}
+}
